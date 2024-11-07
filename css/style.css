@@ -287,6 +287,10 @@ header label {
     header{
         position: static;
     }
+
+    header label{
+        display: none;
+    }
     .container {
         padding: 0;
     }
