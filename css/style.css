@@ -1,0 +1,256 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+      2. Remove default margin
+    */
+* {
+    margin: 0;
+}
+
+/*
+      Typographic tweaks!
+      3. Add accessible line-height
+      4. Improve text rendering
+    */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+      5. Improve media defaults
+    */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+      6. Remove built-in form typography styles
+    */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*
+      7. Avoid text overflows
+    */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 1.17rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    padding: 1.5rem 0;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    max-width: 938px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#main-menu ul {
+    font-size: 1rem;
+}
+
+#main-menu {
+    background: #666;
+}
+
+#main-menu a:link, #main-menu a:visited {
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+#main-menu a:hover, #main-menu a:active {
+    color: #F58221;
+    text-decoration: underline;
+
+}
+
+#main-menu li:first-child a {
+    padding-left: 0;
+}
+
+
+
+nav ul a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    padding: 2.5rem 0 4rem 0;
+}
+
+article {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px #bbb solid;
+}
+
+article.flex{
+    flex-direction: column;
+}
+
+article .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    padding-bottom: 1rem;
+
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+.content {
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 14px;
+    padding: 0 0.5rem 0.75rem 0;
+}
+
+.content a {
+    color: #f58220;
+    text-decoration: none;
+
+}
+
+aside {
+    width: 300px;
+    background-color: #e5e5e5;
+    padding: 0.5rem;
+    display: none;
+}
+
+aside p {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding-top: 0.75rem;
+    color: #666;
+    text-align: left;
+}
+
+aside #nav-content ul {
+    font-size: 0.875rem;
+}
+
+aside #nav-content ul a {
+    display: block;
+    text-decoration: none;
+    color: #f58220;
+    padding: 0.875rem 0 0 2rem;
+}
+
+aside h3 {
+    border-bottom: 1px #bbb solid;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.footer {
+    background: #333;
+    padding: 1rem 0 1.5rem 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #cccccc;
+    margin-top: auto;
+}
+
+footer a {
+    color: #f58220;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media screen and (min-width:1000px) {
+    .container {
+        padding: 0;
+    }
+    aside {
+        display: block;
+    }
+    main {
+        width: 638px;
+        padding: 2.5rem 1.2rem 4rem 0;
+    }
+    article.flex{
+        flex-direction: row;
+    }
+    .content {
+        font-weight: 400;
+        margin: 0 0 0 1rem;
+    
+    }
+    article .image {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 2rem;
+    }
+    .logo{
+        justify-content: flex-start;
+        display: flex;
+    }
+    footer p{
+        text-align: left;
+    }
+}
