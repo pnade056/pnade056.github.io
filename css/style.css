@@ -59,6 +59,8 @@ body {
 header {
     background-color: #333;
     padding: 1.5rem 0;
+    position: fixed;
+    width: 100vw;
 }
 
 .logo{
@@ -222,7 +224,69 @@ footer p{
     text-align: center;
 }
 
-@media screen and (min-width:1000px) {
+.mobile{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.desktop{
+    display: none;
+}
+
+#main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.mobile{
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 0;
+    background-color: #666;
+    position: fixed;
+    top: 125px;
+    height: 100vh;
+    width: 100vw;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.mobile a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#click:checked ~ ul.mobile{
+    left: 0;
+}
+
+#click:checked ~ label i::before {
+    content: "\f00d";
+}
+
+#click:not(checked) ~ ul.mobile{
+    left: -100%;
+}
+
+
+
+@media screen and (min-width:800px) {
+    header{
+        position: static;
+    }
     .container {
         padding: 0;
     }
@@ -244,7 +308,7 @@ footer p{
     article .image {
         width: 160px;
         height: 160px;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
     .logo{
         justify-content: flex-start;
@@ -253,4 +317,12 @@ footer p{
     footer p{
         text-align: left;
     }
+    .mobile{
+        display: none;
+    }
+    
+    .desktop{
+        display: block;
+    }
 }
+
