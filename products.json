@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nom": "Canard Pingouin",
-        "prix": 12.99,
+        "prix": 10.99,
         "description": "Lorem ipsum dolor sit amet.",
         "img" : "img/Produits/pingouin.jpg"
     },
@@ -16,14 +16,14 @@
     {
         "id": 3,
         "nom": "Canard Parisien",
-        "prix": 12.99,
-        "description": "Avant d'aller au pieu, rien de tel qu'une bonne baignade avec ce canard venu des vieux pays.",
+        "prix": 15.99,
+        "description": "Avant d'aller au pieu, rien de tel qu'une bonne baignade avec ce canard venu des vieux pays. Parfum de camembert non compris.",
         "img" : "img/Produits/parisien.png"
     },
     {
         "id": 4,
         "nom": "Canard 47",
-        "prix": 12.99,
+        "prix": 1.99,
         "description": "Make Bathtime Great Again!",
         "img" : "img/Produits/maga.jpg"
     },

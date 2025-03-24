@@ -15,7 +15,7 @@ $color3: #5D2C02;*/
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) 
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root,
 [data-bs-theme=light] {
@@ -13608,7 +13608,7 @@ img {
 
 body {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #333;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
@@ -13645,12 +13645,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .navbar-brand img {
-  height: 5rem;
+  height: 3rem;
   filter: drop-shadow(0 0 1rem #333);
 }
 
 .carousel {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item {
+  max-height: 800px;
 }
 
 .carousel-item::after {
@@ -13685,15 +13689,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;*/
-  background-color: rgba(251, 255, 0, 0.3450980392);
+  background-color: rgba(251, 255, 0, 0.2509803922);
 }
 
 /* .hero > *{
     color: #333;
 } */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
+  border-radius: 25px;
+}
+
+.card > img {
+  padding: 1rem;
 }
 
 .produits {
@@ -13702,6 +13711,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .produits p, h2, .h2 {
   color: #333;
+  z-index: 2;
+}
+
+/*
+#products{
+    //content: "";
+    background-color: #44CCFF;
+    //background: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 10px solid;
+} */
+.produits * {
+  z-index: 1;
 }
 
 footer {

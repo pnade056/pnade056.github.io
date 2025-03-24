@@ -18,7 +18,8 @@ body{
     // font-family: "Merriweather", serif;
     font-size: 1rem;
     // line-height: 1.5;
-    font-weight: 400;
+    //font-weight: 400;
+    font-weight: 600;
     color: #333;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
@@ -62,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .navbar-brand img{
-    height: 5rem;
+    height: 3rem;
     filter: drop-shadow(0 0 1rem #333)
 }
 
@@ -70,6 +71,11 @@ h1,h2,h3,h4,h5,h6 {
 .carousel{
     //margin: 5rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.carousel-item{
+    max-height: 800px;
 }
 
 .carousel-item::after{
@@ -105,7 +111,7 @@ h1,h2,h3,h4,h5,h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;*/
-    background-color: #fbff0058;
+    background-color: #fbff0040;
 
 }
 
@@ -114,17 +120,44 @@ h1,h2,h3,h4,h5,h6 {
 } */
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0;
+    border-radius: 25px;
+}
+
+.card > img{
+    padding: 1rem;
 }
 
 .produits{
     // background-color: #f5f5dc;
     // background-color: #23C3FF;
+    //background-color: #333;
     background-color: #44CCFF;
+
 }
 .produits p, h2{
     color: #333;
+    z-index: 2;
+}
+
+/*
+#products{
+    //content: "";
+    background-color: #44CCFF;
+    //background: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 10px solid;
+} */
+
+.produits *{
+    z-index: 1;
 }
 
 footer{
