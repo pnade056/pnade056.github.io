@@ -1,0 +1,53 @@
+$spacer: 2rem ;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 2,
+    6: $spacer * 3,
+    7: $spacer * 5,
+    8: $spacer * 7,
+    9: $spacer * 10
+);
+
+
+$primary: #FFD700;
+$navbar-light-hover-color: lighten($primary, 20%);
+$navbar-light-active-color: #fff;
+$navbar-light-brand-color: black;
+
+
+// $body-color: #626262;
+// $headings-color: #626262;
+// $footer: #f0f0f0;
+
+
+$font-family-base: "Raleway", sans-serif;
+// $font-family-base: "Winky Sans", Serif;
+// $font-family-sans-serif: "Ubuntu", sans-serif;
+
+// $input-bg: transparent;
+// $input-border-color: #000;
+// $input-border-radius: 0;
+// $input-focus-box-shadow: none;
+// $navbar-nav-link-padding-x: 1.5rem;
+
+// $darken: darken($primary, 30%);
+// $overlay: rgba($darken, 0.5);
+
+/*
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1062pxpx,
+  xxl: 1062pxpx
+) !default;
+*/
+
+/*
+$color1: #68DBFF;
+$color2: #FF7917;
+$color3: #5D2C02;*/

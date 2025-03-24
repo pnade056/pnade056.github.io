@@ -1,0 +1,20 @@
+<svg
+    version="1.1"
+    id="rubber_duck"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 200 200"
+    width="200" height="200"
+>
+    <!-- Corps du canard -->
+    <circle cx="90" cy="100" r="50" fill="#FFD700" stroke="#E6AC00" stroke-width="3" />
+    
+    <!-- Tête du canard -->
+    <circle cx="140" cy="70" r="30" fill="#FFD700" stroke="#E6AC00" stroke-width="3" />
+    
+    <!-- Bec du canard -->
+    <path d="M160,75 Q180,65 160,55" fill="#FF8C00" stroke="#CC7000" stroke-width="3" />
+    
+    <!-- Œil du canard -->
+    <circle cx="145" cy="65" r="5" fill="#000000" />
+</svg>

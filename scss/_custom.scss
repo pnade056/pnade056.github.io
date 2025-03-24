@@ -1,0 +1,197 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    // font-family: "Merriweather", serif;
+    font-size: 1rem;
+    // line-height: 1.5;
+    font-weight: 400;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    //background-color: #F5F5DC;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    // font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    // line-height: 1.2;
+    color: #333;
+}
+
+/*
+.winky-sans-<uniquifier> {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+
+.navbar{
+    background-color: #00AEEF;
+}
+
+
+.navbar-brand img{
+    height: 5rem;
+    filter: drop-shadow(0 0 1rem #333)
+}
+
+
+.carousel{
+    //margin: 5rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item::after{
+    content: "";
+    background: linear-gradient(0deg, rgba(255,255,255,0.50) 10%, rgba(255,255,255,0) 30%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.carousel-item-dark::after{
+    content: "";
+    background: linear-gradient(0deg, rgba(0,0,0,0.80) 10%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0) 50%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-caption{
+    z-index: 1;
+}
+
+.hero{
+    /*
+    background-image: url(../img/Bg-section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #fbff0058;
+
+}
+
+/* .hero > *{
+    color: #333;
+} */
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+}
+
+.produits{
+    // background-color: #f5f5dc;
+    // background-color: #23C3FF;
+    background-color: #44CCFF;
+}
+.produits p, h2{
+    color: #333;
+}
+
+footer{
+    background-color: #333;
+    color: #aaa;
+}
+
+footer * {
+    margin: 0;
+}
+
+#arrow {
+    display: inline-block;
+    opacity : 0;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 8rem;
+    margin-right: 3rem;
+    height: 75px;
+    width: 75px;
+    color: #333;
+    background-color: $primary;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+    
+    &:hover{
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+
+
+
+.show{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+.show:hover{
+    cursor: pointer;
+}
+
+.click{
+    background-image: url(../img/desktop-wallpaper-rubber-duck-vector-art-icon-and-graphics-for-cute-yellow-ducks.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    position: relative;
+
+
+}
+
+.click::after{
+    content: "";
+    background: rgba(0, 0, 100, 0.30);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.click > *{
+    z-index: 1;
+}
+

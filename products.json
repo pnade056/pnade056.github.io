@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nom": "Canard Pingouin",
+        "prix": 12.99,
+        "description": "Lorem ipsum dolor sit amet.",
+        "img" : "img/Produits/pingouin.jpg"
+    },
+    {
+        "id": 2,
+        "nom": "Canard Plongeur",
+        "prix": 12.99,
+        "description": "Lorem ipsum dolor sit amet.",
+        "img" : "img/Produits/plongeur.jpg"
+    },
+    {
+        "id": 3,
+        "nom": "Canard Parisien",
+        "prix": 12.99,
+        "description": "Avant d'aller au pieu, rien de tel qu'une bonne baignade avec ce canard venu des vieux pays.",
+        "img" : "img/Produits/parisien.png"
+    },
+    {
+        "id": 4,
+        "nom": "Canard 47",
+        "prix": 12.99,
+        "description": "Make Bathtime Great Again!",
+        "img" : "img/Produits/maga.jpg"
+    },
+    {
+        "id": 5,
+        "nom": "Canard de la Liberté",
+        "prix": 12.99,
+        "description": "Duck bless America!",
+        "img" : "img/Produits/liberty.jpg"
+    },
+    {
+        "id": 6,
+        "nom": "Canard Garde Anglais",
+        "prix": 12.99,
+        "description": "Duck save the Queen!",
+        "img" : "img/Produits/garde-anglais.jpg"
+    },
+    {
+        "id": 7,
+        "nom": "Canard Oktoberfest",
+        "prix": 12.99,
+        "description": "Duck save the Queen!",
+        "img" : "img/Produits/oktoberfest.jpeg"
+    }
+]
