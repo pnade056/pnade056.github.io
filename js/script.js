@@ -34,6 +34,12 @@ const badge = document.querySelector(".badge");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || []; //getItem Cart ou rien
 
+if (cartCount.textContent == 0) {
+    badge.style.visibility = 'hidden';
+}
+else {
+    badge.style.visibility = 'visible';
+}
 
 fetch("../products.json")
     .then(response => response.json()) // Convertit la réponse en JSON
@@ -134,11 +140,19 @@ fetch("../products.json")
             document.querySelectorAll(".remove-item").forEach(button => {
                 button.addEventListener('click', (e) => {
                     const id = e.target.getAttribute('data-id');
+
                     removeFromCart(id);
                 })
             });
 
             displayClearCartButton();
+
+            if (cartCount.textContent == 0) {
+                badge.style.visibility = 'hidden';
+            }
+            else {
+                badge.style.visibility = 'visible';
+            }
         }
 
         function removeFromCart(id) {

@@ -17,7 +17,7 @@
         "id": 3,
         "nom": "Canard Parisien",
         "prix": 15.99,
-        "description": "Avant d'aller au pieu, rien de tel qu'une bonne baignade avec ce canard venu des vieux pays. Parfum de camembert non compris.",
+        "description": "Avant d'aller au pieu, une bonne baignade s'impose avec ce canard venu des vieux pays. Camambert et pinard non compris.",
         "img" : "img/Produits/parisien.png"
     },
     {
@@ -31,7 +31,7 @@
         "id": 5,
         "nom": "Canard de la Liberté",
         "prix": 12.99,
-        "description": "Duck bless America!",
+        "description": "Duck bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits du 1er amendement!",
         "img" : "img/Produits/liberty.jpg"
     },
     {
