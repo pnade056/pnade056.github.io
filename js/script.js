@@ -30,8 +30,10 @@ const cartContainer = document.getElementById("cart");
 const totalContainer = document.getElementById("total");
 const cartCount = document.getElementById("cart-count");
 const clearCartButton = document.getElementById("clear-cart");
+const badge = document.querySelector(".badge");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || []; //getItem Cart ou rien
+
 
 fetch("../products.json")
     .then(response => response.json()) // Convertit la réponse en JSON
@@ -107,6 +109,7 @@ fetch("../products.json")
                 cart.push({id, nom, prix, quantity: 1});
 
             }
+
             updateCart();
             saveCart(); 
         }

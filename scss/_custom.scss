@@ -67,6 +67,9 @@ h1,h2,h3,h4,h5,h6 {
     filter: drop-shadow(0 0 1rem #333)
 }
 
+.navbar-brand + p{
+    font-family: "Winky Sans";
+}
 
 .carousel{
     //margin: 5rem 0;
@@ -75,7 +78,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .carousel-item{
-    max-height: 800px;
+    max-height: 600px;
 }
 
 .carousel-item::after{
@@ -100,6 +103,7 @@ h1,h2,h3,h4,h5,h6 {
     right: 0;
     bottom: 0;
 }
+
 
 .carousel-caption{
     z-index: 1;
