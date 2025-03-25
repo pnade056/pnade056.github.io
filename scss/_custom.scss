@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .carousel-item{
-    max-height: 600px;
+    max-height: 700px;
 }
 
 .carousel-item::after{
@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .carousel-item-dark::after{
     content: "";
-    background: linear-gradient(0deg, rgba(0,0,0,0.80) 10%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.90) 10%, rgba(0,0,0,0.60) 25%, rgba(0,0,0,0) 40%);
     height: 100%;
     position: absolute;
     top: 0;
