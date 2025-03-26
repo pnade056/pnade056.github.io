@@ -91,22 +91,18 @@ fetch("../products.json")
             <p class="text-center">Prix : ${prix} $</p>
             <p class="text-start">${description}</p>`;
             modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                <button data-id="${id}" data-nom="${nom}" data-prix="${prix}" data-img="${img}" data-description="${description}" type="button" class="btn btn-primary add-to-cart">Ajouter au panier</button>`;
+                <button data-id="${id}" data-nom="${nom}" data-prix="${prix}" data-img="${img}" data-description="${description}" type="button" class="btn btn-primary add-button">Ajouter au panier</button>`;
 
-            /*const myModal = new bootstrap.Modal(document.getElementById("productModal"));
-            myModal.show();*/
-
-            document.querySelectorAll(".add-to-cart").forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const id = e.target.getAttribute("data-id");
-                    const nom = e.target.getAttribute("data-nom");
-                    const prix = e.target.getAttribute("data-prix");
-                    const img = e.target.getAttribute("data-img");
+            document.querySelector(".add-button").addEventListener('click', (event) => {
+                const id = event.target.getAttribute("data-id");
+                    const nom = event.target.getAttribute("data-nom");
+                    const prix = event.target.getAttribute("data-prix");
+                    const img = event.target.getAttribute("data-img");
     
                     addToCart(id, nom, prix, img);
-    
-                });
-            });
+            })
+            /*const myModal = new bootstrap.Modal(document.getElementById("productModal"));
+            myModal.show();*/
 
         };
 
@@ -127,7 +123,6 @@ fetch("../products.json")
             const existingItem = cart.find(item => item.id === id);
             if (existingItem) {
                 existingItem.quantity++;
-                
             } else {
                 cart.push({id, nom, prix, img, quantity: 1});
 
