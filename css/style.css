@@ -13802,4 +13802,8 @@ footer * {
 
 .click > * {
   z-index: 1;
+}
+
+#cartModal {
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

@@ -146,8 +146,15 @@ fetch("../products.json")
                 itemCount += item.quantity;
                 const listItem = document.createElement("li");
                 listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
-                listItem.innerHTML = `<img src="${item.img}" class="img-thumbnail" alt="${item.nom}">
-                <p>${item.nom} X ${item.quantity} = ${(item.prix * item.quantity).toFixed(2)}$</p>
+                listItem.innerHTML = `
+                <div class="d-flex align-items-center gap-2">
+                    <img src="${item.img}" class="img-thumbnail" alt="${item.nom}">
+                <div class="">
+                    <p class="mb-0">${item.nom}</p>
+                    <p class="mb-0">Quantié : ${item.quantity}</p>
+                    <p class="mb-0 ">${(item.prix * item.quantity).toFixed(2)}$</p>
+                </div>
+                </div>
                 <button class="btn btn-danger remove-item" data-id="${item.id}"><i class="fa-regular fa-trash-can"></i></button>`;
                 cartContainer.appendChild(listItem);
 
