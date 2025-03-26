@@ -86,12 +86,28 @@ fetch("../products.json")
             const productModalTitle = document.getElementById("productModalTitle");
             productModalTitle.textContent = nom;
             const modalBody = document.getElementById("productModalBody");
+            const modalFooter = document.getElementById("productModalFooter");
             modalBody.innerHTML = `<img src="${img}" class="img-fluid mb-3" alt="${nom}">
-            <p class="text-center">Prix : ${prix}</p>
-            <p class="text-center">${description}</p>`;
+            <p class="text-center">Prix : ${prix} $</p>
+            <p class="text-start">${description}</p>`;
+            modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button data-id="${id}" data-nom="${nom}" data-prix="${prix}" data-img="${img}" data-description="${description}" type="button" class="btn btn-primary add-to-cart">Ajouter au panier</button>`;
 
             /*const myModal = new bootstrap.Modal(document.getElementById("productModal"));
             myModal.show();*/
+
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const id = e.target.getAttribute("data-id");
+                    const nom = e.target.getAttribute("data-nom");
+                    const prix = e.target.getAttribute("data-prix");
+                    const img = e.target.getAttribute("data-img");
+    
+                    addToCart(id, nom, prix, img);
+    
+                });
+            });
+
         };
 
 
@@ -111,8 +127,9 @@ fetch("../products.json")
             const existingItem = cart.find(item => item.id === id);
             if (existingItem) {
                 existingItem.quantity++;
+                
             } else {
-                cart.push({id, nom, prix, quantity: 1});
+                cart.push({id, nom, prix, img, quantity: 1});
 
             }
 
@@ -129,8 +146,8 @@ fetch("../products.json")
                 itemCount += item.quantity;
                 const listItem = document.createElement("li");
                 listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
-                listItem.innerHTML = `
-                ${item.nom} X ${item.quantity} = ${(item.prix * item.quantity).toFixed(2)}$
+                listItem.innerHTML = `<img src="${item.img}" class="img-thumbnail" alt="${item.nom}">
+                <p>${item.nom} X ${item.quantity} = ${(item.prix * item.quantity).toFixed(2)}$</p>
                 <button class="btn btn-danger remove-item" data-id="${item.id}">X</button>`;
                 cartContainer.appendChild(listItem);
 
