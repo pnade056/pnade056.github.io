@@ -148,7 +148,7 @@ fetch("../products.json")
                 listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
                 listItem.innerHTML = `<img src="${item.img}" class="img-thumbnail" alt="${item.nom}">
                 <p>${item.nom} X ${item.quantity} = ${(item.prix * item.quantity).toFixed(2)}$</p>
-                <button class="btn btn-danger remove-item" data-id="${item.id}">X</button>`;
+                <button class="btn btn-danger remove-item" data-id="${item.id}"><i class="fa-regular fa-trash-can"></i></button>`;
                 cartContainer.appendChild(listItem);
 
             });
@@ -156,8 +156,8 @@ fetch("../products.json")
             cartCount.textContent = itemCount;
             document.querySelectorAll(".remove-item").forEach(button => {
                 button.addEventListener('click', (e) => {
-                    const id = e.target.getAttribute('data-id');
-
+                    const id = e.target.closest(".remove-item").getAttribute('data-id');
+                                            
                     removeFromCart(id);
                 })
             });
