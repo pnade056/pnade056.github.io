@@ -215,3 +215,73 @@ fetch("../products.json")
         }
     })
 })
+
+
+// Formulaire
+
+document.addEventListener("DOMContentLoaded", () =>{
+    const form = document.getElementById("contact-form");
+    form.addEventListener('submit', (event) =>{
+        event.preventDefault(); // Prevenir l'envoi avant la validation
+        if (validateForm()) {
+            alert('Formulaire soumis avec succès !');
+            form.reset();
+        }
+
+
+        function validateForm() {
+            let isValid = true;
+            const name = document.getElementById('InputNom');
+
+            if (name.value.length < 3) {
+                showError(name, "Veuillez entrer votre nom (3 caractères minimum).");
+                isValid = false;                
+            }
+            else {
+                showSuccess(name);
+            }
+
+            const email = document.getElementById('InputEmail');
+            const emailPattern = /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,3}$/;
+
+            if (!emailPattern.test(email.value)) {
+                showError(email, "Veuillez entrer une adresse valide.");
+                isValid = false;                
+            }
+            else {
+                showSuccess(email);
+            }
+
+            const messageBox = document.getElementById('InputMessage');
+            if (messageBox.value.length < 10) {
+                showError(messageBox, "Veuillez entrer votre message (10 caractères minimum).");
+                isValid = false;                
+            }
+            else {
+                showSuccess(messageBox);
+            }
+
+
+
+            function showError(input, message) {
+                const feedback = input.nextElementSibling;
+                input.classList.add('is-invalid'); // Classe Bootstrap
+                input.classList.remove('is-valid');
+                feedback.textContent = message;
+
+            }
+
+            function showSuccess(input) {
+                const feedback = input.nextElementSibling;
+                input.classList.remove('is-invalid');
+                input.classList.add('is-valid');
+                feedback.textContent = "";
+            }
+
+            return isValid;
+            
+        };
+    })
+})
+
+
