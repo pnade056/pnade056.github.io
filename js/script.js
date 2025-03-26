@@ -83,13 +83,20 @@ fetch("../products.json")
         });
 
         function showProductModal(id, nom, prix, img, description) {
-            const productModalTitle = document.getElementById("productModalTitle");
-            productModalTitle.textContent = nom;
+            /* const productModalTitle = document.getElementById("productModalTitle");
+            productModalTitle.textContent = nom; */
             const modalBody = document.getElementById("productModalBody");
             const modalFooter = document.getElementById("productModalFooter");
-            modalBody.innerHTML = `<img src="${img}" class="img-fluid mb-3" alt="${nom}">
-            <p class="text-center">Prix : ${prix} $</p>
-            <p class="text-start">${description}</p>`;
+            modalBody.innerHTML = `
+            <div class="d-flex">
+                <img src="${img}" class="img-fluid w-50" alt="${nom}">
+                <div class="d-flex flex-column justify-content-center">
+                    <h2 class="text-start">${nom}</h2>
+                    <p class="text-start">${description}</p>
+                    <p class="text-start fw-bold fs-5">Prix : ${prix} $</p>
+                </div>
+            </div>
+            `;
             modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 <button data-id="${id}" data-nom="${nom}" data-prix="${prix}" data-img="${img}" data-description="${description}" type="button" class="btn btn-primary add-button">Ajouter au panier</button>`;
 
