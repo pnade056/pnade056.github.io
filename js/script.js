@@ -89,11 +89,17 @@ fetch("../products.json")
             const modalFooter = document.getElementById("productModalFooter");
             modalBody.innerHTML = `
             <div class="d-flex">
-                <img src="${img}" class="img-fluid w-50" alt="${nom}">
-                <div class="d-flex flex-column justify-content-center">
-                    <h2 class="text-start">${nom}</h2>
-                    <p class="text-start">${description}</p>
-                    <p class="text-start fw-bold fs-5">Prix : ${prix} $</p>
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col-12 col-lg-6">
+                        <img src="${img}" class="img-fluid" alt="${nom}">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="text-start">${nom}</h2>
+                            <p class="text-start">${description}</p>
+                            <p class="text-start fw-bold fs-5">Prix : ${prix} $</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             `;
