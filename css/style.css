@@ -13658,15 +13658,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.5rem;
 }
 
-.carousel {
+#carouselHero .carousel {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.carousel-item {
+#carouselHero .carousel-item {
   max-height: 700px;
 }
 
-.carousel-item::after {
+#carouselHero .carousel-item::after {
   content: "";
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0) 30%);
   height: 100%;
@@ -13677,7 +13677,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   bottom: 0;
 }
 
-.carousel-item-dark::after {
+#carouselHero .carousel-item-dark::after {
   content: "";
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0) 40%);
   height: 100%;
@@ -13809,6 +13809,10 @@ footer * {
   z-index: 1;
 }
 
-#cartModal {
-  width: 100vw;
+#carouselReviews .carousel-item {
+  height: 300px;
+}
+
+.reviews {
+  background-color: rgba(251, 255, 0, 0.2509803922);
 }/*# sourceMappingURL=style.css.map */

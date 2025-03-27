@@ -76,18 +76,18 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.5rem;
 }
 
-.carousel{
+#carouselHero .carousel{
     //margin: 5rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.carousel-item{
+#carouselHero .carousel-item{
     //max-height: 80vh;
     max-height: 700px;
 }
 
-.carousel-item::after{
+#carouselHero .carousel-item::after{
     content: "";
     background: linear-gradient(0deg, rgba(255,255,255,0.50) 10%, rgba(255,255,255,0) 30%);
     height: 100%;
@@ -99,7 +99,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.carousel-item-dark::after{
+#carouselHero .carousel-item-dark::after{
     content: "";
     background: linear-gradient(0deg, rgba(0,0,0,0.90) 10%, rgba(0,0,0,0.60) 25%, rgba(0,0,0,0) 40%);
     height: 100%;
@@ -226,8 +226,6 @@ footer * {
     background-size: contain;
     background-repeat: repeat;
     position: relative;
-
-
 }
 
 .click::after{
@@ -245,6 +243,10 @@ footer * {
     z-index: 1;
 }
 
-#cartModal{
-    width: 100vw;
+#carouselReviews .carousel-item{
+    height: 300px;
+}
+
+.reviews{
+    background-color: #fbff0040;
 }
