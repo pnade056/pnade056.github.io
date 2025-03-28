@@ -13814,5 +13814,8 @@ footer * {
 }
 
 .reviews {
-  background-color: rgba(251, 255, 0, 0.2509803922);
+  background: url(../img/1391957.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

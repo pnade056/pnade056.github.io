@@ -111,8 +111,8 @@
 
 
 
-        <div class="hero d-flex flex-column justify-content-center align-items-center py-6">
-            <h1 class="text-black">Découvrez notre boutique exceptionnelle!</h1>
+        <div class="hero py-6">
+            <h1 class="text-black text-center">Découvrez notre boutique exceptionnelle!</h1>
             <p class="text-center pb-3">Chaque article est fabriqué avec soin dans notre atelier depuis 1867. Nous nous assurons de la meilleure flottabilité possible pour nos matériaux.</p>
             
         </div>
@@ -122,7 +122,9 @@
     <section class="produits py-6">
 
         <div class="container">
-            <h2 class="text-center pb-3">Mare aux canards (Produits)</h2>
+            <h2 class="text-center">Mare aux canards</h2>
+            <p class="text-center fs-5 pb-3">(Produits)</p>
+
 
         
             <div id="products" class="row row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
@@ -132,46 +134,56 @@
 
     </section>
 
-    <section class="click d-flex justify-content-center align-items-center py-5 gap-3">
+    <div class="click d-flex justify-content-center align-items-center py-4 gap-3">
 <!--         <input type="email" class="form-control w-25" id="exampleFormControlInput1" placeholder="name@example.com">
         <button class="btn btn-dark">Click Me!</button> -->
-    </section>
+    </div>
 
 
     <section class="reviews py-6">
+      <h2 class="text-center mb-3">On parle de nous!</h2>
       <div class="container">
         <div id="carouselReviews" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
-            <div class="container">
-              <div class="carousel-caption text-start h-100 align-content-center">
-                <p class="fs-4 fw-bold mb-2 w-50 ">Tous les beaux canards partent vite. C'est vraiment trop injuste!</p>
-                <p class="fs-5 fw-semibold m-0">- Calimero (Poussin célèbre)</p>
+            
+              <div class="carousel-caption text-center h-100 align-content-center">
+                <div class="row justify-content-center gap-3">
+                  
+                  <div class="col-6">
+                    <p class="fs-4 fw-bold mb-3"><em>La livraison est rapide, et les produits sont de grande qualité, flottant à la perfection sans jamais perdre leur charme!</em></p>
+                    <p class="fs-5 fw-semibold m-0">Le Canard Enchaîné</p>
+                  </div>
+                </div>
+                
               </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption text-center h-100 align-content-center">
+              <div class="row justify-content-center gap-3">
+                <div class="col-6">
+                  <p class="fs-4 fw-bold mb-3"><em>Un site à visiter d'urgence pour mettre un peu de fun et de couleur dans son bain!</em></p>
+                  <p class="fs-5 fw-semibold m-0">Canard PC</p>
+                </div>
+              </div>
+              
             </div>
           </div>
           <div class="carousel-item">
-            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
-            <div class="container d-flex align-items-center">
-              <div class="carousel-caption text-start h-100 align-content-center">
-                <p class="fs-4 fw-bold mb-2 w-50">Tous les beaux canards partent vite. C'est vraiment trop injuste!</p>
-                <p class="fs-5 fw-semibold m-0">- Calimero (Poussin célèbre)</p>
+            <div class="carousel-caption text-center h-100 align-content-center">
+              <div class="row justify-content-center gap-3">
+                <div class="col-6">
+                  <p class="fs-4 fw-bold mb-3 "><em>It's Yuge! Bath time just got 45% greater!</em></p>
+                  <p class="fs-5 fw-semibold m-0">Donald Trump</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
-            <div class="container">
-              <div class="carousel-caption text-start h-100 align-content-center">
-                <p class="fs-4 fw-bold mb-2 w-50">Tous les beaux canards partent vite. C'est vraiment trop injuste!</p>
-                <p class="fs-5 fw-semibold m-0">- Calimero (Poussin célèbre)</p>
-              </div>
+              
             </div>
           </div>
         </div>
