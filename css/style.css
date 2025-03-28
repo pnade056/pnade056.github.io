@@ -13663,12 +13663,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.5rem;
 }
 
-#carouselHero .carousel {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/* #carouselHero .carousel{
+    //margin: 5rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+ */
 #carouselHero .carousel-item {
-  max-height: 700px;
+  max-height: 750px;
 }
 
 #carouselHero .carousel-item::after {
@@ -13734,7 +13736,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .produits p, h2, .h2 {
-  color: #333;
   z-index: 2;
 }
 
