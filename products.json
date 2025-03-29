@@ -3,14 +3,14 @@
         "id": 1,
         "nom": "Canard Pingouin",
         "prix": 10.99,
-        "description": "Lorem ipsum dolor sit amet.",
+        "description": "Ce canard a quitté l'Antarctique pour plonger directement dans votre baignoire! Avec son look chic de pingouin, il prouve que même les canards peuvent être élégants sous zéro. Glissez-le dans l'eau et laissez-le faire la vague!",
         "img" : "img/Produits/pingouin.jpg"
     },
     {
         "id": 2,
         "nom": "Canard Plongeur",
         "prix": 12.99,
-        "description": "Lorem ipsum dolor sit amet.",
+        "description": "Prêt à explorer les profondeurs de votre baignoire? Ce canard plongeur ne recule devant aucun bain moussant. Avec son masque et sa bonbonne, il est toujours à la recherche de nouvelles bulles à découvrir!",
         "img" : "img/Produits/plongeur.jpg"
     },
     {
@@ -38,14 +38,14 @@
         "id": 6,
         "nom": "Canard Garde Anglais",
         "prix": 12.99,
-        "description": "Duck save the Queen!",
+        "description": "Même dans l'eau, ce canard garde son flegme britannique ! Avec son chapeau à poil et son air stoïque, il veille sur votre baignoire avec dignité. Attention : il ne sourit jamais, même quand vous faites des bulles!",
         "img" : "img/Produits/garde-anglais.jpg"
     },
     {
         "id": 7,
         "nom": "Canard Oktoberfest",
         "prix": 12.99,
-        "description": "Ich möchte ein Bier, bitte! Rien de tel qu'on bon bain après un soirée bien arosée!",
+        "description": "Ich möchte ein Bier, bitte! Après un soirée bien arosée, ce canard est toujours prêt pour continuer la fête dans votre salle de bain. Avec son costume traditionnel et sa bonne humeur contagieuse, chaque bain se transforme en Oktoberfest.",
         "img" : "img/Produits/oktoberfest.jpeg"
     },
     {

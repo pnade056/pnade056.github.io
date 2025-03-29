@@ -158,7 +158,7 @@ fetch("../products.json")
                 <div class="d-flex align-items-center gap-2">
                     <img src="${item.img}" class="img-thumbnail" alt="${item.nom}">
                 <div class="">
-                    <p class="mb-0">${item.nom}</p>
+                    <p class="fw-bold fs-5 mb-0">${item.nom}</p>
                     <p class="mb-0">Quantié : ${item.quantity}</p>
                     <p class="mb-0 ">${(item.prix * item.quantity).toFixed(2)}$</p>
                 </div>
