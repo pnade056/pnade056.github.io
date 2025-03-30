@@ -3,22 +3,22 @@
         "id": 1,
         "nom": "Canard Pingouin",
         "prix": 10.99,
-        "description": "Ce canard a quitté l'Antarctique pour plonger directement dans votre baignoire! Avec son look chic de pingouin, il prouve que même les canards peuvent être élégants sous zéro. Glissez-le dans l'eau et laissez-le faire la vague!",
+        "description": "Il a quitté l'Antarctique pour plonger directement dans votre baignoire! Avec son look chic de pingouin, il prouve que même les canards peuvent être élégants en dessous de zéro.",
         "img" : "img/Produits/pingouin.jpg"
     },
     {
         "id": 2,
         "nom": "Canard Plongeur",
         "prix": 12.99,
-        "description": "Prêt à explorer les profondeurs de votre baignoire? Ce canard plongeur ne recule devant aucun bain moussant. Avec son masque et sa bonbonne, il est toujours à la recherche de nouvelles bulles à découvrir!",
+        "description": "Prêt à explorer les profondeurs de votre baignoire? Ce canard plongeur ne recule devant aucun bain moussant. Avec son masque et sa bonbonne, il est toujours à la recherche de découvertes dans les fonds marins!",
         "img" : "img/Produits/plongeur.jpg"
     },
     {
         "id": 3,
         "nom": "Canard Parisien",
         "prix": 15.99,
-        "description": "Avant d'aller au pieu, un bon bain rempli de flotte s'impose avec ce canard venu directement de l'Hexagone. Camembert et pinard non compris.",
-        "img" : "img/Produits/parisien.png"
+        "description": "Avant d'aller au pieu, rien de tel que de se reposer dans la flotte avec ce canard venu directement de l'Hexagone. Camembert et pinard non compris.",
+        "img" : "img/Produits/parisien.jpg"
     },
     {
         "id": 4,
@@ -37,78 +37,78 @@
     {
         "id": 6,
         "nom": "Canard Garde Anglais",
-        "prix": 12.99,
-        "description": "Même dans l'eau, ce canard garde son flegme britannique ! Avec son chapeau à poil et son air stoïque, il veille sur votre baignoire avec dignité. Attention : il ne sourit jamais, même quand vous faites des bulles!",
+        "prix": 10.99,
+        "description": "Même dans l'eau, ce canard garde son flegme britannique ! Avec son chapeau à poil et son air stoïque, il veille sur votre baignoire avec dignité. Attention: il ne sourit jamais, même quand vous faites des bulles!",
         "img" : "img/Produits/garde-anglais.jpg"
     },
     {
         "id": 7,
         "nom": "Canard Oktoberfest",
-        "prix": 12.99,
-        "description": "Ich möchte ein Bier, bitte! Après un soirée bien arosée, ce canard est toujours prêt pour continuer la fête dans votre salle de bain. Avec son costume traditionnel et sa bonne humeur contagieuse, chaque bain se transforme en Oktoberfest.",
+        "prix": 11.99,
+        "description": "Ich möchte ein Bier, bitte! Après une soirée bien arrosée, cette jeune cane est toujours prête pour continuer la fête dans votre salle de bain. Cette bavaroise est la partenaire idéale pour célébrer l'Oktoberfest!",
         "img" : "img/Produits/oktoberfest.jpeg"
     },
     {
         "id": 8,
-        "nom": "Canard 47",
-        "prix": 1.99,
-        "description": "Make Bathing Great Again! Ce canard rend hommage à un président américain très connu devenu célèbre grâce à son livre « The Art of the Bath ». The Best Duck Ever Made, Believe Me! Made in CHINA!!!",
-        "img" : "img/Produits/maga.jpg"
+        "nom": "Canard Halloween",
+        "prix": 14.99,
+        "description": "Ce canard squelette est prêt à hanter votre baignoire! Avec son look effrayant mais adorable, il transforme chaque bain en une fête macabre. Parfait pour Halloween ou pour ajouter une touche d'humour morbide à votre salle de bain! Ça donne la chair de poule!",
+        "img" : "img/Produits/halloween.jpg"
     },
     {
         "id": 9,
-        "nom": "Canard de la Liberté",
+        "nom": "Canard Chasseur",
         "prix": 12.99,
-        "description": "Duck Bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits en vertu du 1er amendement!",
-        "img" : "img/Produits/liberty.jpg"
+        "description": "Ce canard est prêt pour la chasse! Accompagné de son fièle partenaire canin, il est toujours prêt pour l'aventure. Les canards sauvages n'ont qu'à bien se tenir!",
+        "img" : "img/Produits/chasseur.jpeg"
     },
     {
         "id": 10,
-        "nom": "Canard 47",
-        "prix": 1.99,
-        "description": "Make Bathing Great Again! Ce canard rend hommage à un président américain très connu devenu célèbre grâce à son livre « The Art of the Bath ». The Best Duck Ever Made, Believe Me! Made in CHINA!!!",
-        "img" : "img/Produits/maga.jpg"
+        "nom": "Canard Bouddha",
+        "prix": 13.99,
+        "description": "Atteignez le nirvana dans votre baignoire! Avec son regard contemplatif et sa posture méditative, il vous rappelle de prendre du temps pour vous détendre. Idéal pour un bain relaxant après une longue journée.",
+        "img" : "img/Produits/bouddha.jpg"
     },
     {
         "id": 11,
-        "nom": "Canard de la Liberté",
-        "prix": 12.99,
-        "description": "Duck Bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits en vertu du 1er amendement!",
-        "img" : "img/Produits/liberty.jpg"
+        "nom": "Canard Golfeur",
+        "prix": 9.99,
+        "description": "Birdie! Ce canard amateur de golf sait éviter les obstscles d'eau! Avec son club #1, il est prêt à réussir un trou du premier coup. Tiger Woods peut aller se rhabiller!",
+        "img" : "img/Produits/golfeur.jpeg"
     },
     {
         "id": 12,
-        "nom": "Canard de la Liberté",
+        "nom": "Canard Cycliste",
         "prix": 12.99,
-        "description": "Duck Bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits en vertu du 1er amendement!",
-        "img" : "img/Produits/liberty.jpg"
+        "description": "Soyez prêt pour le Tour de France! Ce canard cycliste est en pleine forme pour affronter les pentes les plus raides. Il n'attend que vous pour remporter le maillot jaune!",
+        "img" : "img/Produits/cycliste.jpeg"
     },
     {
         "id": 13,
-        "nom": "Canard 47",
-        "prix": 1.99,
-        "description": "Make Bathing Great Again! Ce canard rend hommage à un président américain très connu devenu célèbre grâce à son livre « The Art of the Bath ». The Best Duck Ever Made, Believe Me! Made in CHINA!!!",
-        "img" : "img/Produits/maga.jpg"
+        "nom": "Canard Mouton Noir",
+        "prix": 11.99,
+        "description": "Ce canard est le mouton noir de la famille! Pelage noir et laine soyeuse, il va se démarquer dans votre baignoire. Il est la preuve que même les canards peuvent être uniques!",
+        "img" : "img/Produits/mouton-noir.jpg"
     },
     {
         "id": 14,
-        "nom": "Canard de la Liberté",
-        "prix": 12.99,
-        "description": "Duck Bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits en vertu du 1er amendement!",
-        "img" : "img/Produits/liberty.jpg"
+        "nom": "Canard Chanteur Rock",
+        "prix": 13.99,
+        "description": "Faites du bruit! Guitare électrique en main, il fera vibrer votre baignoire au rythme du rock'n'roll. Avec son look de vedette, il est prêt à donner un concert inoubliable!",
+        "img" : "img/Produits/chanteur.jpeg"
     },
     {
         "id": 15,
-        "nom": "Canard 47",
-        "prix": 1.99,
-        "description": "Make Bathing Great Again! Ce canard rend hommage à un président américain très connu devenu célèbre grâce à son livre « The Art of the Bath ». The Best Duck Ever Made, Believe Me! Made in CHINA!!!",
-        "img" : "img/Produits/maga.jpg"
+        "nom": "Canard Marathonien",
+        "prix": 14.99,
+        "description": "Une course effrénée dans votre baignoire! Le canard marathonien est prêt à relever tous les défis. Il ne rêve qu'une chose: franchir la ligne d'arrivée de votre salle de bain!",
+        "img" : "img/Produits/marathonien.jpg"
     },
     {
         "id": 16,
-        "nom": "Canard de la Liberté",
+        "nom": "Canard Pirate",
         "prix": 12.99,
-        "description": "Duck Bless America! Célébrez votre poursuite du bonheur grâce à ce canard qui symbolise l'idéal américain. N'oubliez pas de faire respecter vos droits en vertu du 1er amendement!",
-        "img" : "img/Produits/liberty.jpg"
+        "description": "Ohé moussaillon! Ce canard pirate est prêt à naviguer sur les sept mers! Embarquez à bord de son navire et partez à la recherche de trésors cachés. Attention aux sirènes!",
+        "img" : "img/Produits/pirate.jpg"
     }
 ]

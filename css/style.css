@@ -13702,13 +13702,30 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .hero-mobile {
   height: 500px;
   width: 100%;
-  background-image: url(../img/361856.jpg);
+  background-image: url(../img/slide-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.hero {
+.hero-mobile::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-mobile > * {
+  z-index: 1;
+  position: relative;
+}
+
+.about-us {
   /*
   background-image: url(../img/Bg-section.png);
   background-repeat: no-repeat;
@@ -13717,7 +13734,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: #feffbf;
 }
 
-/* .hero > *{
+/* .about-us > *{
     color: #333;
 } */
 .card {
@@ -13735,11 +13752,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   max-height: 100px;
 }
 
-.produits {
+#produits {
   background-color: #44CCFF;
 }
 
-.produits p, h2, .h2 {
+#produits p, h2, .h2 {
   z-index: 2;
 }
 
@@ -13757,7 +13774,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     border-radius: 50px;
     border: 10px solid;
 } */
-.produits * {
+#produits * {
   z-index: 1;
 }
 
