@@ -13726,12 +13726,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .about-us {
-  /*
-  background-image: url(../img/Bg-section.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;*/
-  background-color: #feffbf;
+  background-color: #ffdf33;
 }
 
 /* .about-us > *{
@@ -13760,20 +13755,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   z-index: 2;
 }
 
-/*
-#products{
-    //content: "";
-    background-color: #44CCFF;
-    //background: rgba(0, 0, 0, 0.45);
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 2rem;
-    border-radius: 50px;
-    border: 10px solid;
-} */
 #produits * {
   z-index: 1;
 }
