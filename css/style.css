@@ -13702,7 +13702,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .hero-mobile {
   height: 500px;
   width: 100%;
-  background-image: url(../img/slide-1.jpg);
+  background-image: url(../img/Slides/slide1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13729,9 +13729,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: #ffdf33;
 }
 
-/* .about-us > *{
-    color: #333;
-} */
 .card {
   box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
