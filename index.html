@@ -284,18 +284,18 @@
 
               <form id="contact-form" novalidate>
                 <div class="mb-3">
-                    <label for="InputNom" class="form-label">Nom</label>
+                    <label id="NomHelp" for="InputNom" class="form-label">Nom</label>
                     <input type="text" class="form-control" id="InputNom" aria-describedby="NomHelp" required>
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="mb-3">
-                  <label for="InputEmail" class="form-label">Email</label>
+                  <label id="emailHelp" for="InputEmail" class="form-label">Email</label>
                   <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
                   <div class="invalid-feedback"></div>
                   <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                 </div>
                 <div class="mb-3">
-                    <label for="InputMessage" class="form-label">Message</label>
+                    <label id="MessageHelp" for="InputMessage" class="form-label">Message</label>
                     <textarea class="form-control" id="InputMessage" aria-describedby="MessageHelp"></textarea>
                     <div class="invalid-feedback"></div>
                 </div>
@@ -311,7 +311,7 @@
       </div>
     
       <!-- Modal Panier -->
-      <div class="modal modal-lg fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal modal-lg fade" id="cartModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -332,7 +332,7 @@
 
         
         <!-- Modal -->
-        <div class="modal modal-lg fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal modal-lg fade" id="productModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
